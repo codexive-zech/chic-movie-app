@@ -29,7 +29,7 @@ const Home = () => {
   if (isLoading) {
     return (
       <section className="movie">
-        <h1 className="loading">LOADING MOVIES...</h1>
+        <h1 className="loading"></h1>
       </section>
     );
   }
@@ -44,6 +44,7 @@ const Home = () => {
   return (
     <>
       <div className="poster">
+        {/* Carousel */}
         {popularMovies.length > 0 ? (
           <Carousel
             showThumbs={false}
@@ -84,12 +85,13 @@ const Home = () => {
           </Carousel>
         ) : null}
       </div>
-      {/*  */}
+      {/* End of Carousel */}
+
+      {/* Popular Movies */}
       {popularMovies.length > 0 ? (
         <div>
           <h1 className="heading">{"Popular".toUpperCase()}</h1>
           <section className="movies ">
-            {/* iterate over the movie list state */}
             {popularMovies.map((movie) => {
               const {
                 id,
@@ -123,7 +125,9 @@ const Home = () => {
           </section>
         </div>
       ) : null}
-      {/*  */}
+      {/* End of Popular Movies */}
+
+      {/* Button section */}
       <div className="btn-container">
         <button className="next-btn" onClick={changeNextPage}>
           Load More Movies

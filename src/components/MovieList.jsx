@@ -33,7 +33,7 @@ const MovieList = () => {
   if (isLoading) {
     return (
       <section className="movie">
-        <h1 className="loading">LOADING...</h1>
+        <h1 className="loading"></h1>
       </section>
     );
   }
@@ -67,7 +67,7 @@ const MovieList = () => {
               return (
                 <Link
                   style={{ textDecoration: "none", color: "white" }}
-                  to={`/movie/${id}`}
+                  to={`movie/${id}`}
                 >
                   <div className="posterImage">
                     <img
