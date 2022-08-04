@@ -4,6 +4,7 @@ import MovieList from "./components/MovieList";
 import SharedNav from "./components/SharedNav";
 import Home from "./pages/Home";
 import SingleMovie from "./pages/SingleMovie";
+import Error from "./pages/Error";
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,7 @@ function App() {
             <Route path="movie/:id" element={<SingleMovie />} />
             <Route path="movies/:type" element={<MovieList />} />
             <Route path="movies/:type/movie/:id" element={<SingleMovie />} />
-            <Route path="*" element={<h2>Error Page</h2>} />
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </Router>

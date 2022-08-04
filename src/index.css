@@ -388,3 +388,20 @@ a > span:hover {
     cursor: pointer;
   }
 }
+
+.error-page {
+  display: flex;
+  justify-content: center;
+}
+.error-container {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.error-container h1 {
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
