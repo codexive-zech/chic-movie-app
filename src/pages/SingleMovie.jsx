@@ -30,7 +30,7 @@ const SingleMovie = () => {
   if (isLoading) {
     return (
       <section className="movie">
-        <h1 className="loading"></h1>
+        <div className="loading"></div>
       </section>
     );
   }

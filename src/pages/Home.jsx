@@ -29,7 +29,7 @@ const Home = () => {
   if (isLoading) {
     return (
       <section className="movie">
-        <h1 className="loading"></h1>
+        <div className="loading"></div>
       </section>
     );
   }
@@ -91,7 +91,7 @@ const Home = () => {
       {popularMovies.length > 0 ? (
         <div>
           <h1 className="heading">{"Popular".toUpperCase()}</h1>
-          <section className="movies ">
+          <section className="movies">
             {popularMovies.map((movie) => {
               const {
                 id,

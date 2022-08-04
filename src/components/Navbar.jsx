@@ -17,6 +17,7 @@ const Navbar = () => {
           <Link to="/movies/upcoming" style={{ textDecoration: "none" }}>
             <span>Upcoming</span>
           </Link>
+          <div className="mode"></div>
         </div>
       </div>
     </nav>

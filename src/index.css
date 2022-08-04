@@ -1,19 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --color-black: #000;
   --color-white: #fff;
 }
 
-html {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-.dark-theme {
+/* .dark-theme {
   background: var(--color-black);
   color: var(--color-white);
 }
@@ -21,8 +11,19 @@ html {
 .light-theme {
   background-color: var(--color-white);
   color: var(--color-black);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.5;
+  transition: all 0.5s linear;
+}
 /* Header Nav */
 .header {
   margin: 0.75rem 2.5rem;
@@ -47,13 +48,14 @@ a > span:hover {
   color: red;
 }
 
-.header__icon {
-  width: 80px;
-  cursor: pointer;
+.links h1 {
+  font-size: 2rem;
+  color: var(--color-white);
 }
 
-.user__avatar {
-  font-size: 2rem;
+.header__icon {
+  width: 100px;
+  cursor: pointer;
 }
 
 .links {
@@ -216,10 +218,11 @@ a > span:hover {
   border: 5px solid pink;
   border-radius: 50%;
   border-top-color: red;
-  animation: spinner 3s linear infinite;
+  animation: spinner 2s linear infinite;
   margin: 10rem auto;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
 
 @keyframes spinner {
@@ -379,5 +382,9 @@ a > span:hover {
   .description p {
     font-size: 1.5rem;
     margin-top: 2rem;
+  }
+  .header__icon {
+    width: 120px;
+    cursor: pointer;
   }
 }
