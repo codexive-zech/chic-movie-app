@@ -28,11 +28,7 @@ const SingleMovie = () => {
   }, [id]);
 
   if (isLoading) {
-    return (
-      <section className="movie">
-        <div className="loading"></div>
-      </section>
-    );
+    return <div className="loading"></div>;
   }
 
   const {
